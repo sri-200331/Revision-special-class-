@@ -1,4 +1,6 @@
-// functions
+// functions(even or odd, sum of 1 to N, factorial, array sum, largest of three, move zeros to end of the 
+// array,  index of 2 elements whose sum is equal to target, reverse a string, reverse a word.)
+
 
 // 1.Even or Odd Function 
 // Create a function that takes a number and prints whether it’s even or odd.
@@ -73,6 +75,7 @@ factor(0)
 
 // 4.Array Sum Function 
 // Write a function that accepts an array and returns the sum of all numbers.
+// calculate sum of an array using  a loop
 let arr=[1,2,3,4,5]
 function array(arr){
     let total=0
@@ -128,7 +131,71 @@ console.log(Evennum(count))
 
 
 
-// /second largest
+
+
+
+// move all zeros to the end of the array using loop 
+let arry=[0,1,0,3,12,0,37,82,0,83,0,2]
+let j=0
+for (let i=0;i<arry.length;i++){
+    if(arry[i]!==0){
+        let temp=arry[i]
+        arry[i]=arry[j]
+        arry[j]=temp
+        j++
+    }
+}
+console.log(arry)
+
+
+// find the index of 2 elements whose sum is equal to target
+function twosum(arr,target){
+    for (let i=0;i<arr.length;i++){
+        for (let j=i+1;j<arr.length;i++){
+            if(arr[i]+arr[j]===target){
+                return [i,j]
+            }
+        }
+    }
+}
+console.log(twosum([1,2,3,4,5],6))
+
+
+
+// reverse a string
+let str='hello'
+let reversed=""
+for(let i=str.length-1;i>=0;i--){
+    reversed+=str[i]
+}
+console.log(reversed)
+
+
+// reverse a word
+let strn='java is easy'
+let word=strn.split(' ')
+    // split('')space vitama pana letters reverse agum 'ysae si avaj'  and space vita words reverse agum.
+let reverse=''
+for(let i=word.length-1;i>=0;i--){
+        reverse+=word[i]+""
+}
+console.log(reverse.trim())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

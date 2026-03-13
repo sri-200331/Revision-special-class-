@@ -1,4 +1,5 @@
 // string function-length,charAt
+
 // 1. Email Username Extractor :
 //{ A user enters their email: "ramprasad@gmail.com". 
 // Extract only the username (before @). 

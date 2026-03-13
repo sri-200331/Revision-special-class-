@@ -1,5 +1,10 @@
 //Array methods- push(),pop(),unshift(),shift(),map(),filter()
 
+// array.splice(start, deleteCount, item1, item2, ...)
+// array.unshift(element1, element2, ...) add element in first
+// 
+
+
 // 1.Given the array [1, 2, 4, 5], insert the number 3 between 4 and 5.
 let numb=[1,2,4,5]
 numb.splice(3,0,3)

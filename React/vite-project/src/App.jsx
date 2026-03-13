@@ -1,6 +1,7 @@
 import { useState } from 'react'
 // import APItest from './components/APItest'
 import APItest1 from './components/APItest1'
+import Counter from './components/Counter'
 // import StudentForm from './components/StudentForm'
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
     <>
     {/* <StudentForm/> */}
     {/* <APItest/> */}
-    <APItest1/>
+    {/* <APItest1/> */}
+
+    <Counter/>
 
 
       

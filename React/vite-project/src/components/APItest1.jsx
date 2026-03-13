@@ -15,7 +15,7 @@ function APItest1(){
 
         })
         .catch((err)=>{
-            setError('axios failed')
+            setError('axios failed',err)
             setLoading(false)
         })
     },[])
