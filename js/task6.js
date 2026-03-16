@@ -1,6 +1,6 @@
 // interview task(ascending, print even number, smallest number from an array, count of 6 in an array,
 // palindrome, largest number of an array, count no. of vowels  in string, remove duplicates,
-//  frequency of an element, prime, fibonacci, swap without third variable, second largest)
+//  frequency of an element, prime, fibonacci, swap without third variable, second largest, find a largest word in a sentence)
 
 
 // 1.print even numberusing array
@@ -212,4 +212,34 @@ console.log(second)
 
 
 
+// find the largest word in a sentence 
+let sentence='mern stack developer course'
+let words=sentence.split(" ")
+let largest=''
 
+for(let word of words){
+    if(word.length>largest.length){
+            largest=word
+    }
+}
+console.log(largest)
+
+
+
+
+// using function
+
+function largestword(str){
+    let words=str.split(" ")
+    let largest=" "
+
+    for(let i=0;i<words.length;i++){
+        if(words[i].length>largest.length){
+            largest=words[i]
+        }
+       
+    }
+    return largest
+}
+let result=largestword('mern stack developer course')
+console.log(result)
