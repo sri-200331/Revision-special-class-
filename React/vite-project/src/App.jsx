@@ -2,6 +2,9 @@ import { useState } from 'react'
 // import APItest from './components/APItest'
 import APItest1 from './components/APItest1'
 import Counter from './components/Counter'
+import Profile from './components/Profile'
+import EvenNo from './components/EvenNo'
+import Calculator from './components/Calculator'
 // import StudentForm from './components/StudentForm'
 
 function App() {
@@ -12,9 +15,11 @@ function App() {
     {/* <StudentForm/> */}
     {/* <APItest/> */}
     {/* <APItest1/> */}
+    <Calculator/>
 
-    <Counter/>
-
+    {/* <Counter/> */}
+    {/* <Profile/> */}
+    {/* <EvenNo/> */}
 
       
     </>
